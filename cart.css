@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.close {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    color: black;
+
+    a {
+        color: black;
+    }
+    i {
+        font-size: 30px;
+    }
+}
+.suucess-delete {
+    background-color: red;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    display: none;
+    h1 {
+        font-size: 16px;
+        padding: 5px;
+    }
+}
+.card {
+    max-width: 1920px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    padding: 50px;
+
+
+    .card2 {
+        width: 450px;
+        transition: all 0.3s;
+        border: 1px solid #E0E0E0;
+        .content-img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            img {
+                width: 400px;
+            }
+        }
+        .text-content-card {
+            padding: 20px 30px;
+            span {
+                font-size: 16px;
+                margin-right: 10px;
+                font-weight: bold;
+                font-style: italic;
+                color: rgb(110, 93, 93)
+                
+            }
+            h1 {
+                margin-bottom: 20px;
+            }
+            h2, 
+            h4,
+            p{
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+            p {
+                font-weight: bold;
+            }
+            .button {
+                display: flex;
+                flex-direction: column;
+                margin-top: 30px;
+                align-items: center;
+                justify-content: center;
+                a {
+                    text-decoration: none;
+                    padding: 5px 20px;
+                    width: 290px;
+                    font-size: 14px;
+    
+                    color: white;
+                    background-color: rgba(6, 10, 255, 0.705);
+                    border: none;
+                    cursor: pointer;
+                    transition: all 0.4s;
+                    margin-bottom: 10px;
+                    text-align: center;
+                }
+                a:last-child {
+                    background-color: red;
+                }
+                a:hover {
+                    background-color: rgba(0, 0, 128, 0.8);
+                    box-shadow: 0 4px 8px rgba(6, 10, 255, 0.705);
+    
+                }
+                a:last-child:hover {
+                    background-color: rgb(129, 5, 5);
+                    box-shadow: 0 4px 8px rgba(129, 5, 5);
+
+                }
+            }
+        }
+
+    }
+}

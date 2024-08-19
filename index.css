@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.container {
+    max-width: 1920px;
+    margin: auto;
+    border-bottom: 1px solid #E0E0E0;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    .succes-message {
+        display: none; 
+        background-color: rgb(1, 160, 1);
+        position: fixed;
+        top: 0;
+        left: 0;
+        max-width: 1920px;
+        width: 100%;
+        text-align: center;
+        padding: 5px;
+        z-index: 100;
+    
+    
+        .text-content {
+
+            h4 {
+                font-size: 16px;
+                color: white;
+                i {
+                    margin-left: 10px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .logo {
+        img {
+            width: 120px;
+            
+        }
+    }
+    .search {
+        display: flex;
+        position: relative;
+        input {
+            padding: 8px 25px;
+            border: 1px solid #E0E0E0;
+            width: 300px;
+            outline: none;
+        }
+        button {
+            padding: 0px 10px;
+            border: none;
+            font-size: 16px;
+            color: white;
+            background-color: rgba(6, 10, 255, 0.705);
+            cursor: pointer;
+            
+        }
+        i {
+            position: absolute;
+            font-size: 27px;
+            font-weight: bold;
+            right: 70px;
+            cursor: pointer;
+            display: none;
+        }
+
+   
+    }
+    .right-content {
+        display: flex;
+        gap: 10px;
+        font-size: 30px;
+        gap: 20px;
+        position: relative;
+        button, a {
+            background-color: transparent;
+            border: none;
+            font-size: 30px;
+            cursor: pointer;
+            color:rgba(6, 10, 255, 0.705);
+        }
+        button {
+            display: none;
+        }
+        h4 {
+            font-size: 18px;
+            background-color: transparent;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            position: absolute;
+            border-radius: 50%;
+            right: -15px;
+            top: -10px;
+            display: none;
+            color: red;
+
+        }
+
+        
+    }
+
+}
+.section1 {
+    max-width: 1920px;
+    margin: auto;
+    display: flex;
+    .content-left {
+        border-right: 1px solid #E0E0E0;
+        padding-left: 300px;
+        padding-right: 20px;
+        padding-top: 20px;
+        position: sticky;
+        overflow-y: scroll;
+        height: 100vh;
+        position: sticky;
+
+
+        .content-text-left {
+            display: flex;
+            flex-direction: column;
+
+            a {
+                text-decoration: none;
+                margin-bottom: 10px;
+                color: black;
+                padding: 5px 20px;
+                transition: all 0.3s;
+                border: 1px solid transparent;
+            }
+            a:hover {
+                border-bottom: 1px solid rgba(6, 10, 255, 0.705);
+                border-top: 1px solid rgba(6, 10, 255, 0.705);
+            }
+        }
+    }
+    .content-left::-webkit-scrollbar {
+        width: 0;
+    }
+    .content-right {
+        padding-left: 20px;
+        padding-top: 20px;
+        height: 100vh;
+        overflow-y: scroll;
+        .cards {
+            width: 1300px;
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap; 
+            
+
+
+            .card {
+                width: 350px;
+                height: 600px;
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 10px;
+                justify-content: space-between;
+                transition: all 0.3s;
+                border: 1px solid #E0E0E0;
+                .img {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 10px;
+                    overflow: hidden;
+                    margin: auto;
+
+                    img {
+                        width: 200px;
+                    }
+
+                }
+                .text-content-card {
+                    padding: 10px;
+                    overflow: auto; 
+                    word-wrap: break-word; 
+                    span {
+                        font-size: 12px;
+                        margin-right: 20px;
+                        font-style: italic;
+                        color: silver;
+                    }
+                    h4,
+                    h5 {
+                        margin-bottom: 10px;
+                    }
+                    .button {
+                        margin-top: 30px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+
+                        button {
+                            padding: 5px 20px;
+                            width: 290px;
+                            font-size: 14px;
+            
+                            color: white;
+                            background-color: rgba(6, 10, 255, 0.705);
+                            border: none;
+                            cursor: pointer;
+                            transition: all 0.4s;
+
+                            i {
+                                margin-left: 10px;
+                            }
+
+                        }
+                        button:hover {
+                            background-color: rgba(0, 0, 128, 0.8);
+                            box-shadow: 0 4px 8px rgba(6, 10, 255, 0.705);
+            
+                        }
+                    }
+                }
+
+
+            }
+            .card:hover {
+              
+                    box-shadow: 0 4px 8px rgba(6, 10, 255, 0.705);
+                
+            }
+        }
+
+    }
+}
+.content-right::-webkit-scrollbar {
+    width: 0;
+}
