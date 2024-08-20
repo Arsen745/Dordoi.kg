@@ -6,6 +6,9 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+.search {
+    display: none;
+}
 .container {
     max-width: 1920px;
     margin: auto;
@@ -48,6 +51,9 @@
         img {
             width: 120px;
             
+        }
+        .burger-menu {
+            display: none;
         }
     }
     .search {
@@ -128,7 +134,7 @@
         padding-top: 20px;
         position: sticky;
         overflow-y: scroll;
-        height: 100vh;
+        height: 100vh;  
         position: sticky;
 
 
@@ -292,4 +298,82 @@ footer {
             padding: 20px;
         }
     }
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 20px;
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            img {
+                width: 70px;
+            }
+            .burger-menu {
+                cursor: pointer;
+                display: block;
+              
+                i {
+                    color:rgba(6, 10, 255, 0.705);
+                    font-size: 30px;
+                }
+            }
+        }
+        .search {
+            position: absolute;
+            top: 130px;
+            left: 50px;
+
+            display: none;
+            input {
+                width: 200px;
+                height: 37px;
+
+            }
+            button {
+                height: 36px;
+                margin-left: -5px;
+                padding-bottom: 2px;
+            
+
+            }
+            i {
+                display: none;
+            }
+        }
+        .right-content {
+            button {
+                display: block;
+            }
+        }
+    }
+    .section1 {
+        margin-top: 50px;
+        .content-left {
+            padding-left: 10px;
+            margin-right: 20px;
+            position: absolute;
+            z-index: 100;
+            background-color: white;
+            display: none;
+        }
+        .content-right {
+            height: 100%;
+            .cards {
+                width: 100%;
+                flex-direction: column;
+
+            }
+        }
+
+    }
+    footer {
+        padding: 20px;
+
+        .content-footer {
+            flex-direction: column;
+        }
+    } 
+
 }

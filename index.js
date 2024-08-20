@@ -188,7 +188,7 @@ const button = document.querySelector('#search');
 const clear = document.querySelector('.search i')
 function checkInputValue() {
     if (input.value.length > 0) {
-        clear.style.display = 'block';
+        clear.style.display = 'none';
     } else {
         clear.style.display = 'none';
     }
@@ -271,3 +271,34 @@ function AddToCart2(id, value) {
     displayCart();
 
 }
+// Dom 
+const buttonSearch = document.querySelector('.right-content button');
+const formSearch = document.querySelector('.search');
+
+function OpenButtons() {
+    buttonSearch.addEventListener('click', () => {
+        if (formSearch.style.display === 'none' || formSearch.style.display === '') {
+            formSearch.style.display = 'block';
+        } else {
+            formSearch.style.display = 'none';
+        }
+    });
+}
+
+OpenButtons();
+
+
+const buttonCategory = document.querySelector('.logo .burger-menu');
+const openCategory = document.querySelector('.content-left');
+
+function openCategory2() {
+    buttonCategory.addEventListener('click', () => {
+        if (openCategory.style.display === 'block') {
+            openCategory.style.display = 'none';
+        } else {
+            openCategory.style.display = 'block';
+        }
+    });
+}
+
+openCategory2();

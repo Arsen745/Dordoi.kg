@@ -391,3 +391,29 @@ footer {
      
     }
 }
+@media (max-width: 1200px) {
+    .container {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .order{
+        flex-direction: column;
+    }
+    footer {
+        padding: 50px;
+    }
+}
+@media (max-width: 700px) {
+    .container {
+        padding: 30px;
+        h1 {
+            color: red; 
+            display: none;
+        }
+    }
+    footer {
+        .content-footer {
+            flex-direction: column;
+        }
+    }
+}
