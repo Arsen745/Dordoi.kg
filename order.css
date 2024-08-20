@@ -6,6 +6,127 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+.container {
+    max-width: 1920px;
+    margin: auto;
+    border-bottom: 1px solid #E0E0E0;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    .succes-message {
+        display: none; 
+        background-color: rgb(1, 160, 1);
+        position: fixed;
+        top: 0;
+        left: 0;
+        max-width: 1920px;
+        width: 100%;
+        text-align: center;
+        padding: 5px;
+        z-index: 100;
+    
+    
+        .text-content {
+
+            h4 {
+                font-size: 16px;
+                color: white;
+                i {
+                    margin-left: 10px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .logo {
+        img {
+            width: 120px;
+            
+        }
+    }
+    .search {
+        display: flex;
+        position: relative;
+        gap: 50px;
+        a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        a:hover {
+            color:rgba(6, 10, 255, 0.705);
+        }
+        input {
+            padding: 8px 25px;
+            border: 1px solid #E0E0E0;
+            width: 300px;
+            outline: none;
+        }
+        button {
+            padding: 0px 10px;
+            border: none;
+            font-size: 16px;
+            color: white;
+            background-color: rgba(6, 10, 255, 0.705);
+            cursor: pointer;
+            
+        }
+        i {
+            position: absolute;
+            font-size: 27px;
+            font-weight: bold;
+            right: 70px;
+            cursor: pointer;
+            display: none;
+        }
+
+   
+    }
+    .right-content {
+        display: flex;
+        gap: 10px;
+        font-size: 30px;
+        gap: 20px;
+        position: relative;
+        button, a {
+            background-color: transparent;
+            border: none;
+            font-size: 30px;
+            cursor: pointer;
+            color:rgba(6, 10, 255, 0.705);
+        }
+        button {
+            display: none;
+        }
+        h4 {
+            font-size: 18px;
+            background-color: transparent;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            position: absolute;
+            border-radius: 50%;
+            right: -15px;
+            top: -10px;
+            display: none;
+            color: red;
+
+        }
+
+        
+    }
+
+}
 .order {
     max-width: 1920px;
     margin: auto;
@@ -21,7 +142,7 @@
 
         .img-content {
             img {
-                width: 600px;
+                width: 400px;
             }
         }
     }
@@ -153,5 +274,50 @@
             }
         }
 
+    }
+}
+footer {
+    border-top: 1px solid #E0E0E0;
+    margin-top: 100px;
+    max-width: 1920px;
+    margin: auto;
+    padding: 30px 300px;
+
+    .content-footer {
+        display: flex;
+        justify-content: space-between;
+
+        .column1,
+        .column2,
+        .column3 {
+            .text-content{
+
+                display: flex;
+                flex-direction: column;
+                h2 {
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                    font-weight: 400;
+                }
+                a {
+                    text-decoration: none;
+                    color: rgb(116, 114, 114);
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    .end {
+        margin-top: 50px;
+        text-align: center;
+        h5 {
+            font-weight: 400;
+            font-style: italic;
+        }
+        .bishkek{
+            border-top: 1px solid silver;
+            margin-top: 10px;
+            padding: 20px;
+        }
     }
 }

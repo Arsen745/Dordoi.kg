@@ -120,6 +120,7 @@
     max-width: 1920px;
     margin: auto;
     display: flex;
+    margin-bottom: 100px;
     .content-left {
         border-right: 1px solid #E0E0E0;
         padding-left: 300px;
@@ -245,4 +246,50 @@
 }
 .content-right::-webkit-scrollbar {
     width: 0;
+}
+footer {
+    border-top: 1px solid #E0E0E0;
+
+    margin-top: 100px;
+    max-width: 1920px;
+    margin: auto;
+    padding: 30px 300px;
+
+    .content-footer {
+        display: flex;
+        justify-content: space-between;
+
+        .column1,
+        .column2,
+        .column3 {
+            .text-content{
+
+                display: flex;
+                flex-direction: column;
+                h2 {
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                    font-weight: 400;
+                }
+                a {
+                    text-decoration: none;
+                    color: rgb(116, 114, 114);
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    .end {
+        margin-top: 50px;
+        text-align: center;
+        h5 {
+            font-weight: 400;
+            font-style: italic;
+        }
+        .bishkek{
+            border-top: 1px solid silver;
+            margin-top: 10px;
+            padding: 20px;
+        }
+    }
 }

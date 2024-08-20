@@ -6,6 +6,105 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+.container {
+    max-width: 1920px;
+    margin: auto;
+    border-bottom: 1px solid #E0E0E0;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    .succes-message {
+        display: none; 
+        background-color: rgb(1, 160, 1);
+        position: fixed;
+        top: 0;
+        left: 0;
+        max-width: 1920px;
+        width: 100%;
+        text-align: center;
+        padding: 5px;
+        z-index: 100;
+    
+    
+        .text-content {
+
+            h4 {
+                font-size: 16px;
+                color: white;
+                i {
+                    margin-left: 10px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .logo {
+        img {
+            width: 120px;
+            
+        }
+    }
+    .search {
+        display: flex;
+        position: relative;
+        gap: 50px;
+        a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        .activen {
+            color:rgba(6, 10, 255, 0.705)
+        }
+        a:hover {
+            color:rgba(6, 10, 255, 0.705);
+        }
+   
+    }
+    .right-content {
+        display: flex;
+        gap: 10px;
+        font-size: 30px;
+        gap: 20px;
+        position: relative;
+        button, a {
+            background-color: transparent;
+            border: none;
+            font-size: 30px;
+            cursor: pointer;
+            color:rgba(6, 10, 255, 0.705);
+        }
+        button {
+            display: none;
+        }
+        h4 {
+            font-size: 18px;
+            background-color: transparent;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            position: absolute;
+            border-radius: 50%;
+            right: -15px;
+            top: -10px;
+            display: none;
+            color: red;
+
+        }
+
+        
+    }
+
+}
 .close {
     position: absolute;
     top: 20px;
@@ -55,7 +154,7 @@
             justify-content: center;
             padding: 20px;
             img {
-                width: 400px;
+                width: 300px;
             }
         }
         .text-content-card {
@@ -70,6 +169,7 @@
             }
             h1 {
                 margin-bottom: 20px;
+                font-size: 24px;
             }
             h2, 
             h4,
@@ -116,5 +216,174 @@
             }
         }
 
+    }
+}
+footer {
+    border-top: 1px solid #E0E0E0;
+    margin-top: 100px;
+    max-width: 1920px;
+    margin: auto;
+    padding: 30px 300px;
+
+    .content-footer {
+        display: flex;
+        justify-content: space-between;
+
+        .column1,
+        .column2,
+        .column3 {
+            .text-content{
+
+                display: flex;
+                flex-direction: column;
+                h2 {
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                    font-weight: 400;
+                }
+                a {
+                    text-decoration: none;
+                    color: rgb(116, 114, 114);
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    .end {
+        margin-top: 50px;
+        text-align: center;
+        h5 {
+            font-weight: 400;
+            font-style: italic;
+        }
+        .bishkek{
+            border-top: 1px solid silver;
+            margin-top: 10px;
+            padding: 20px;
+        }
+    }
+}
+
+@media  (max-width: 500px) {
+    .container {
+        padding: 10px;
+        width: 100%;
+        h1 {
+            margin-right: 10px;
+            display: none;
+        }
+        .search {
+            gap: 20px;
+            text-align: center;
+        }
+    }
+    .close {
+        display: none;
+    }
+    .card {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        .card2 {
+            width: 300px;
+    
+            .content-img {
+                img {
+                    width: 150px;
+                }
+            }
+            .text-content-card {
+                padding: 10px 10px;
+                span {
+                    font-size: 12px;
+                }
+                h1 {
+                    font-size: 13px;
+                    margin-bottom: 10px;
+                }
+                h2, 
+                h4 {
+                    font-size: 13px;
+                }
+                p {
+                    font-size: 12px;
+                }
+                
+    
+          
+    
+            }
+        }
+    }
+
+    footer {
+        width: 100%;
+        padding: 10px;
+        .content-footer {
+            flex-direction: column;
+        }
+    }
+}
+@media (max-width: 400px) {
+    .card {
+        border: 1px solid red;
+        padding-left: 10px;
+
+        .card2 {
+            width: 300px;
+
+            .content-img{
+                img {
+                    width: 200px;
+                }
+            }
+            .text-content-card {
+                h1 {
+                    font-size: 14px;
+                }
+                span {
+                    font-size: 12px;
+                }
+                h2,
+                h4 {
+                    font-size: 13px;
+                }
+                p {
+                    font-size: 12px;
+                }
+            }
+
+        }
+    }
+
+}
+
+@media (max-width: 800px) {
+    .container {
+        padding: 20px;
+        h1 {
+            display: none;
+        }
+    }
+    footer {
+        width: 100%;
+        padding: 10px;
+    }
+}
+@media (max-width: 600px) {
+    footer {
+
+        .content-footer {
+            flex-direction: column;
+        }
+    }
+}
+@media (max-width: 1600px) {
+    .container {
+        padding: 20px 100px;
+    }
+    footer {
+        padding: 20px 100px;
+    
     }
 }
