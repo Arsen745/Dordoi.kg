@@ -70,6 +70,7 @@ function Value(category) {
     fetch(onclickFetch + category)
         .then(res => res.json())
         .then((data) => {
+            openCategory3()
             cards.innerHTML = ''
 
             for (const el of data) {
@@ -302,3 +303,10 @@ function openCategory2() {
 }
 
 openCategory2();
+function openCategory3() {
+        if (openCategory.style.display === 'block') {
+            openCategory.style.display = 'none';
+        } else {
+            openCategory.style.display = 'block';
+        }
+}

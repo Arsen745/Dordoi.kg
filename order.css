@@ -324,6 +324,14 @@ footer {
 
 
 @media (max-width: 500px) {
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        background-color: white;
+        width: 100%;
+    }
     .container {
         padding: 20px;
         width: 100%;
