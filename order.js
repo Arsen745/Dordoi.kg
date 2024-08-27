@@ -47,7 +47,7 @@ function getOrder() {
                             <h2>${price * count}<span>KGZ</span></h2>
                         </div>
                         <div class="button">
-                            <button>Купить<span>(${count})</span></button>
+                            <button onClick = 'OpenRegis()'>Купить<span>(${count})</span></button>
                         </div>
                     </div>`;
 
@@ -73,3 +73,7 @@ function updateCount(change, price) {
 }
 
 getOrder();
+
+function OpenRegis() {
+    window.location.href = 'registration.html'
+}
