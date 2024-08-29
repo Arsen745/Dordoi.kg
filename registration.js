@@ -56,7 +56,19 @@ button.addEventListener(('click'), () => {
         name1.value = ''
         number.value = ''
         comment.value = ''
+        suces();
     }
 })
+
+
+const succes = document.querySelector('.succes');
+
+function suces() {
+    succes.style.display = 'block'; 
+    setTimeout(() => {
+        succes.style.display = 'none'; 
+    }, 2000);
+}
+
 
 
