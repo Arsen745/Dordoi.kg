@@ -13,7 +13,7 @@ function fetchData(number, name, comment) {
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify({
+        body: JSON.stringify({ 
             number: number,
             name: name,
             comment: comment
@@ -27,9 +27,9 @@ function fetchData(number, name, comment) {
 
 }
 button.addEventListener(('click'), () => {
-    let hasError = false;
+    let hasError = false;   
 
-    if (number.value.trim().length === 0) {
+    if (number.value.trim().length === 0) {                   
         number.style.border = '1px solid red'
         hasError = true
     } else {

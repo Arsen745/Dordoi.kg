@@ -22,11 +22,11 @@ const texts = [
     { name: "Соковыжималка", category: "Socovij" },
     { name: "Электрическая мясорубка", category: "Miasorubka" },
     { name: "Электрический плита", category: "ElectricStove" },
-    { name: "Электрический чайник", category: "Kettle" },
+    { name: "Электрический чайник", category: "Chainik" },
     { name: "Электрический нагреватель", category: "Nagrevatel" },
-    { name: "Встраиваемая техника", category: "BuiltIn" },
+    { name: "Встраиваемая техника", category: "Vstoemyi" },
     { name: "Отпариватель", category: "Otparivatel" },
-    { name: "Посудомоечная машина", category: "Dishwasher" }
+    { name: "Посудомоечная машина", category: "PosydaMashine" }
 ];
 const containerCategory = document.querySelector('.content-text-left')
 const cards = document.querySelector('.cards')
